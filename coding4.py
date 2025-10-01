@@ -9,12 +9,13 @@ import re
 from datetime import datetime
 from supabase import create_client, Client
 
+
 SUPABASE_URL = "https://djosyykbmsyikyhcodhg.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRqb3N5eWtibXN5aWt5aGNvZGhnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTU3MTUwNzQsImV4cCI6MjA3MTI5MTA3NH0.ZFKmtKzanbIfTxs_VZC1X67TyQTy1HS3h4Rqz9d7qZs"
+SUPABASE_KEY = ""
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 endpoint = "https://cdong1--azure-proxy-web-app.modal.run"
-api_key = "supersecretkey"
+api_key = ""
 deployment_name = "gpt-4o"
 client = OpenAI(
     base_url=endpoint,
