@@ -46,7 +46,8 @@ for entry in soup.select(".ranking-list")[:10]:
     ep_match = re.search(r"(\d+)\s*eps", info_text)
     if ep_match:
         ep_count = int(ep_match.group(1))
-
+        
+    # Extract start and ending year
     start_year, end_year = None, None
     if " - " in info_text:
         date_part = info_text.split(") ")[-1]  
